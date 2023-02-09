@@ -1,0 +1,398 @@
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("../fuentes/Roboto-Regular.ttf") format("ttf");
+}
+
+body,
+html,
+:root {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Regular', Helvetica, sans-serif;
+    font-size: 16px;
+    --verde-color: #00d664;
+    --letra-comun: 16px;
+}
+
+.gris{
+    color: gray;
+}
+
+.letraVerde {
+    color: var(--verde-color);
+}
+
+.envoltura {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    width: 62%;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.envolturaHeader {
+    display: flex;
+    justify-content: end;
+    align-content: center;
+}
+
+#envolturaHeader {
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo {
+    width: 110px;
+    height: 40px;
+}
+
+#botonHeader {
+    width: 150px;
+    background-color: var(--verde-color);
+    color: white;
+    border: 0px;
+    border-radius: 2px;
+}
+
+#iconosHeader {
+    display: flex;
+    align-items: baseline;
+}
+
+#iconosHeader>* {
+    margin-left: 10px;
+}
+
+a,
+li {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+ul>li~li>a {
+    color: dimgray;
+    transition: 1s;
+}
+
+ul>li>a:hover {
+    color: black;
+    transition: 1s;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    margin-left: 30px;
+    display: flex;
+}
+
+#marcas {
+    display: flex;
+    justify-content: center;
+}
+
+.envolturaNavHeader {
+    display: flex;
+}
+
+.envolturaNavHeader>* {
+    margin-left: 30px;
+}
+
+
+#seccionPresentacion {
+    background-image: url("../imagenes/fondoSeccion1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    display: flex;
+}
+
+.contenidoPresentacion {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 30%;
+    left: 20%;
+    width: 30%;
+}
+
+.contenidoPresentacion>p {
+    margin-bottom: 30px;
+}
+
+#videoExterno {
+    width: 250px;
+    height: 175px;
+    margin-bottom: 10px;
+}
+
+#flechaPresentacion {
+    height: 20px;
+    width: 19px;
+}
+
+.botonesPresentacion {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.botonesPresentacion>a {
+    margin-right: 10px;
+}
+
+#demostracion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+#demostracionSubtitulo {
+    font-size: 36px;
+    max-width: 450px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#demostracion > p {
+    max-width: 680px;
+    text-align: center;
+}
+
+#demostracionCaracteristicas{
+    display: flex;
+    width: 60%;
+    min-width: 700px;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#demostracionCaracteristicas > article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;   
+    max-width: 300px;
+}
+
+#demostracionCaracteristicas > article > p{
+    margin-top: 0px;
+}
+
+#videoProyecto {
+    width: 950px;
+    height: 600px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 60px;
+}
+
+#movilEjemplo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#movilEjemplo>span {
+    font-size: 52px;
+    font-weight: 300;
+}
+
+.imagenmovil {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#descargaSection {
+    background-image: url("../imagenes/descargaFondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#descargaSection>section {
+    width: 62%;
+}
+
+.descargaLimitante>h2 {
+    max-width: 40%;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.descargaLimitante>p {
+    max-width: 38%;
+    margin-bottom: 40px;
+}
+
+#cajaSus {
+    background-image: url("../imagenes/suscripcionFondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 730px;
+    height: 250px;
+    border-radius: 4px;
+    position: relative;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cajaSus>h2 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+#emailSus {
+    width: 500px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 24px;
+    border-color: lightgray;
+    padding-left: 20px;
+    margin-top: 32px;
+}
+
+#botonSus {
+    position: absolute;
+    right: 110px;
+    top: 165px;
+    border: none;
+    border-radius: 24px;
+    width: 120px;
+    height: 35px;
+    color: white;
+    font-weight: 600;
+    background-color: #0575e6;
+
+}
+
+#envolturaFooter {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    background-color: #f7f4fb;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    width: 62%;
+}
+
+footer>section {
+    display: flex;
+    flex-direction: column;
+}
+
+footer>section:not(:last-child) {
+    margin-right: 11%;
+}
+
+.tituloFooter {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.textFooter {
+    margin-bottom: 25px;
+}
+
+.textFooter:hover {
+    color: var(--verde-color);
+    text-decoration: var(--verde-color) underline;
+    transition: 0.5s;
+}
+
+.licencia {
+    margin-top: 10px;
+}
+
+h2[class~="tituloSection"] {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 680px) {
+    .envoltura {
+        display: flex;
+        justify-content: center;
+    }
+
+    header {
+        display: unset;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    #botonHeader {
+        position: fixed;
+    }
+
+    .imagenmovil {
+        margin-top: 150px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 680px) and (max-width: 970px) {
+    .envoltura {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .envolturaHeader {
+        display: flex;
+        justify-content: end;
+        align-content: center;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    .envolturaHeader>* {
+        margin-left: 10px;
+    }
+
+    li {
+        margin-left: 10px;
+    }
+
+    .imagenmovil {
+        margin-top: 150px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
