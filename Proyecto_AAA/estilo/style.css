@@ -10,16 +10,30 @@ html,
     padding: 0;
     font-family: 'Roboto Regular', Helvetica, sans-serif;
     font-size: 16px;
-    --verde-color: #00d664;
+    --verde-color: darkgreen;
     --letra-comun: 16px;
 }
 
 .gris{
-    color: gray;
+    color: darkslategray;
+}
+
+h1{
+    font-size: 16;
+    color: var(--verde-color);
+    margin: 0px;
+}
+
+.enlaces:focus{
+    background-color: aliceblue;
 }
 
 .letraVerde {
     color: var(--verde-color);
+}
+
+#direccion{
+    font-size: 18px;
 }
 
 .envoltura {
@@ -80,7 +94,7 @@ li {
 }
 
 ul>li~li>a {
-    color: dimgray;
+    color: darkslategray;
     transition: 1s;
 }
 
@@ -124,7 +138,7 @@ li {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 30%;
+    top: 20%;
     left: 20%;
     width: 30%;
 }
@@ -172,7 +186,7 @@ li {
     text-align: center;
 }
 
-#demostracionCaracteristicas{
+.demostracionCaracteristicas{
     display: flex;
     width: 60%;
     min-width: 700px;
@@ -181,7 +195,7 @@ li {
     margin-top: 30px;
 }
 
-#demostracionCaracteristicas > article{
+.demostracionCaracteristicas > article{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -190,7 +204,7 @@ li {
     max-width: 300px;
 }
 
-#demostracionCaracteristicas > article > p{
+.demostracionCaracteristicas > article > p{
     margin-top: 0px;
 }
 
